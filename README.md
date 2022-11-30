@@ -5,11 +5,11 @@ python -m venv {環境名}
 .\{環境名}\Scripts\activate.bat
 
 # モジュールのインストール
-pip install line-bot-sdk
-pip install flask
-pip install gspread
-pip install load_dotenv
-pip install oauth2client
+pip install line-bot-sdk  
+pip install flask  
+pip install gspread  
+pip install load_dotenv  
+pip install oauth2client  
 
 # スプレッドシートのjsonファイルの作成
 ********.json
