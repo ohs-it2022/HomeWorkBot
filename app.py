@@ -83,7 +83,12 @@ def calc_day(m,d):
     time_now_ja = datetime.datetime.strptime(tstr, '%Y-%m-%d %H:%M:%S')
     print("today1 :", time_now_ja)
     dead_line = change_date(m,d)
-    days_remaining,ano = str(dead_line - time_now_ja).split("days")
+    print("deadline :", dead_line)
+    work = str(dead_line - time_now_ja)
+    if "day" in work:
+        days_remaining,ano = work.split("day")
+    else:
+        days_remaining = 0
     print("c")
     return int(days_remaining) + 1
 
